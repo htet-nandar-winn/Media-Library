@@ -1,138 +1,94 @@
-# Media Library
+# 🎬 Media Library
 
-A web-based Media Library application built with **PHP, MySQL, and the MVC (Model–View–Controller) architecture**. The project is organized into application logic, views, public assets, and database scripts to support structured development and maintenance.
+A web-based Media Library application designed to organize and manage media resources in one place.
 
-## 📌 Project Overview
+## 📌 About the Project
 
-Media Library is designed to organize media-related functionality in a web application using PHP and a MySQL database. It separates application logic from the user interface through the MVC pattern.
+Media Library is a project developed to provide a convenient way to manage and organize media-related information through a web application.
 
-## 🛠️ Tech Stack
+## 🛠️ Technologies Used
 
-- **Backend:** PHP
-- **Database:** MySQL
-- **Architecture:** Model–View–Controller (MVC)
-- **Dependency Management:** Composer
-- **Frontend:** HTML, CSS, JavaScript
-- **Local Development:** XAMPP / Apache
+- PHP
+- MySQL
+- HTML
+- CSS
+- JavaScript
+- XAMPP
+
+## ✨ Features
+
+- Media library management
+- Database connectivity
+- Organized project structure
+- Web-based interface
+
+*Note: Update this list to reflect the features actually implemented in the project.*
 
 ## 📂 Project Structure
 
 ```text
 Media-Library/
-├── App/                 # Application logic
-├── Public/              # Public application resources
-├── css/                 # Stylesheets
-├── img/                 # Image assets
-├── view/                # View templates
-├── vendor/              # Composer dependencies
-├── .env.example         # Example environment configuration
-├── composer.json        # Project dependencies
-├── composer.lock        # Locked dependency versions
-├── database.sql         # Database SQL script
-├── Database01.sql       # Additional database script
-└── StoreProcedures.sql  # Stored procedure definitions
+│
+├── App/
+│   └── DB/
+│       └── Database.php
+│
+├── README.md
+└── ...
 ```
 
-*The exact responsibilities of individual files may vary depending on their implementation.*
-
-## ⚙️ Getting Started
-
-### Prerequisites
-
-Make sure you have installed:
-
-- PHP 8.1 or a compatible version required by the project
-- MySQL or MariaDB
-- Apache server (XAMPP recommended)
-- Composer
-- Git
+## ⚙️ Installation and Setup
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/htetnandarlinn14/Media-Library.git
+git clone https://github.com/htet-nandar-winn/Media-Library.git
 ```
 
-Navigate to the project directory:
+### 2. Navigate to the Project
 
 ```bash
 cd Media-Library
 ```
 
-### 2. Install Dependencies
+### 3. Move the Project to XAMPP
 
-```bash
-composer install
+Place the project inside:
+
+```text
+C:\xampp_new\htdocs\Media-Library
 ```
 
-### 3. Configure Environment Variables
+### 4. Start XAMPP
 
-Copy `.env.example` to `.env` and configure the values required by your application.
+- Start Apache.
+- Start MySQL.
 
-For example:
+### 5. Configure the Database
 
-```env
-DB_HOST=localhost
-DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=root
-DB_PASSWORD=
+Configure the database connection in:
+
+```text
+App/DB/Database.php
 ```
 
-Use the actual variable names expected by the project's configuration code. Do not commit passwords, API keys, or other secrets to GitHub.
+Update the database host, username, password, and database name according to your local environment.
 
-### 4. Set Up the Database
+### 6. Run the Project
 
-1. Start Apache and MySQL from the XAMPP Control Panel.
-2. Open phpMyAdmin at `http://localhost/phpmyadmin`.
-3. Create the database required by the application.
-4. Import the appropriate SQL file from the project, such as `database.sql`.
-5. Run any additional SQL scripts required by the application.
-
-Check the SQL files before importing them to determine which schema and stored procedures are required.
-
-### 5. Run the Application
-
-Place the project inside your XAMPP `htdocs` directory if it is not already there.
-
-Start Apache and MySQL, then open the appropriate application URL in your browser:
+Open your browser and visit:
 
 ```text
 http://localhost/Media-Library/
 ```
 
-If the application uses a different entry point or document root, adjust the URL or Apache configuration accordingly.
+## 👩‍💻 Developer
 
-## 🔑 Key Concepts
+**HTET NANDAR WINN**
 
-- MVC architecture for separation of concerns
-- PHP-based server-side development
-- MySQL database integration
-- Composer dependency management
-- Environment-based configuration
-- Reusable application components
-
-## 🚀 Future Improvements
-
-- Improve media organization and search functionality
-- Enhance input validation and error handling
-- Strengthen authentication and authorization where applicable
-- Add automated tests
-- Improve responsive design and accessibility
-- Document database relationships and application workflows
-
-## 👨‍💻 Author
-
-**Htet Nandar Linn**
-
-GitHub: [@htetnandarlinn14](https://github.com/htetnandarlinn14)
-
-## 📄 License
-
-No license has been specified yet. All rights are reserved by default unless a license is added to the repository. Add an appropriate open-source license if you intend to permit reuse or modification.
+- GitHub: [@htet-nandar-winn](https://github.com/htet-nandar-winn)
+- Repository: [Media-Library](https://github.com/htet-nandar-winn/Media-Library)
 
 ---
 
-⭐ If you find this project useful, feel free to explore the repository and its implementation.
-
-**Repository:** [Media-Library on GitHub](https://github.com/htetnandarlinn14/Media-Library)
+⭐ If you find this project interesting, feel free to explore the repository!
