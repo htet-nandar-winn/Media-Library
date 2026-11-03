@@ -86,7 +86,7 @@ http://localhost/Media-Library/
 
 **HTET NANDAR WINN**
 
-- GitHub: [@htet-nandar-winn](https://github.com/htet-nandar-winn)
+- **GitHub Profile:** [Htet Nandar Winn](https://github.com/htet-nandar-winn)
 - Repository: [Media-Library](https://github.com/htet-nandar-winn/Media-Library)
 
 ---
